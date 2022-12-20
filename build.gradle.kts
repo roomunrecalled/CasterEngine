@@ -10,6 +10,8 @@ repositories {
 }
 
 dependencies {
+    implementation("io.github.ayfri:PIXI-Kotlin-pixi:0.5.2")
+    implementation(npm("pixi.js", "6.5.3"))
     testImplementation(kotlin("test"))
 }
 
