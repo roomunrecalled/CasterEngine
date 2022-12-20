@@ -1,0 +1,18 @@
+{
+  "name": "CasterEngine",
+  "version": "1.0-SNAPSHOT",
+  "private": true,
+  "workspaces": [
+    "packages/CasterEngine",
+    "packages/CasterEngine-test",
+    "packages_imported/kotlin/1.8.0-RC",
+    "packages_imported/kotlin-test-js-runner/1.8.0-RC",
+    "packages_imported/kotlin-test/1.8.0-RC"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

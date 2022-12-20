@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.7.20"
+    kotlin("js") version "1.8.0-RC"
 }
 
 group = "io.itch.roomunrecalled"
@@ -18,7 +18,9 @@ kotlin {
         binaries.executable()
         browser {
             commonWebpackConfig {
-                cssSupport.enabled = true
+                cssSupport {
+                    enabled.set(true)
+                }
             }
         }
     }
