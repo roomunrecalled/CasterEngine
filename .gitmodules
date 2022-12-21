@@ -1,0 +1,3 @@
+[submodule "PIXI-Kotlin"]
+	path = PIXI-Kotlin
+	url = https://github.com/roomunrecalled/PIXI-Kotlin.git
