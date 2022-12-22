@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.8.0-RC"
+    kotlin("js") version "1.7.21"
 }
 
 group = "io.itch.roomunrecalled"
@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.ayfri:PIXI-Kotlin-pixi:0.5.2")
+    implementation(project(":PIXI-Kotlin"))
     implementation(npm("pixi.js", "6.5.3"))
     testImplementation(kotlin("test"))
 }
@@ -20,9 +20,7 @@ kotlin {
         binaries.executable()
         browser {
             commonWebpackConfig {
-                cssSupport {
-                    enabled.set(true)
-                }
+                cssSupport.enabled = true
             }
         }
     }
